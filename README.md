@@ -42,30 +42,30 @@ After prepare all the files, your file structure will be similar as below:
 ```
 ├──data
     ├──SUN
-		├──images
-			├──case1
-				├──image_name.jpg
-				|...
-			├──case2
-			|...
-			├──case100
-		├──new_labels
-			├──case1
-				├──image_name.txt
-				|...
-			├──case2
-			|...
-			├──case100
+        ├──images
+            ├──case1
+                ├──image_name.jpg
+                |...
+            ├──case2
+            |...
+            ├──case100
+        ├──new_labels
+            ├──case1
+                ├──image_name.txt
+                |...
+            ├──case2
+            |...
+            ├──case100
 ├──YOLO-OB
-	├──config
-	├──lib
-	├──utils
-	├──detect.py
-	├──models.py
-	├──README.md
-	├──requirements.txt
-	├──test.py
-	├──train.py
+    ├──config
+    ├──lib
+    ├──utils
+    ├──detect.py
+    ├──models.py
+    ├──README.md
+    ├──requirements.txt
+    ├──test.py
+    ├──train.py
 ```
 
 
