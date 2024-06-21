@@ -190,7 +190,6 @@ class ListDataset(Dataset):
         #     with warnings.catch_warnings():
         #         warnings.simplefilter("ignore")
         #         boxes = np.loadtxt(label_path).reshape(-1, 5)
-        #         # 保存拼接后的标签
         #         # concat_boxes = []
         #         # for box in boxes:
         #         #     c = box[0]
@@ -208,9 +207,6 @@ class ListDataset(Dataset):
         #     return
 
 
-
-        plt_image = image
-
         # -----------
         #  Transform
         # -----------
@@ -220,21 +216,6 @@ class ListDataset(Dataset):
             except Exception:
                 print("Could not apply transform.")
                 return
-
-        # print(image.shape)
-        # import matplotlib.pyplot as plt
-        # import matplotlib.patches as patches
-        # fig, ax = plt.subplots(1, 1)
-        # ax.imshow(plt_image)
-        # # ax.imshow(image.permute(1, 2, 0))
-        # currentAxis = fig.gca()
-        # # 分别是左上的x,y, width, height
-        # # rect = patches.Rectangle((bb_targets[0, [1, 2]]), bb_targets[0, 3], bb_targets[0, 4])
-        # rect = patches.Rectangle((boxes[0, 1]-100, boxes[0, 2]-100), boxes[0, 3], boxes[0, 4],
-        #                          linewidth=1, edgecolor='r',facecolor='none')
-        #
-        # currentAxis.add_patch(rect)
-        # plt.show()
 
         return img_path, image, bb_targets
 
